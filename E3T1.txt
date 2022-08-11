@@ -1,0 +1,8 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+AWS GuardDuty was found two findings one is attacker performing brute force attach and one is being brute force attacked from:
+- i-065ffb33568809cf7 is performing SSH brute force attacks against 10.192.10.27. Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password. 
+- 10.192.11.78 is performing SSH brute force attacks against i-040a1abbec6966523. Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password.
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+- Amazon GuardDuty analyzes and processes data from AWS CloudTrail event logs, VPC Flow Logs, and DNS logs to detect abnormalies events.
+- The source information could be found in the VPC Flow Logs, stored in S3.

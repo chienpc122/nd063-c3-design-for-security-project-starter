@@ -1,0 +1,8 @@
+# Poor practice 1
+Network ACLs rules allow all traffic on all ports from multiple ports (including 22, 5000 and 80), that might cause vulnerabilities.
+Always ensure you do not use a wide range of ports or overly permissions to NACLs during configuration, unless your applications or containers that require a wide range of ports. Also keep the private subnet truly private.
+
+# Poor practice 2
+S3 have no server-side encryption enabled and not IAM role for specific bucket, with not encryption people can read the content.
+S3 contains the VPC Flow Logs may be the issue if the logs contain compromising information, which might cause the security issue if it shows up some sensitive information when the infrastructure is set up not the correct way .
+

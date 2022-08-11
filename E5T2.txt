@@ -1,0 +1,25 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+- TFLint: https://github.com/terraform-linters/tflint
+- Checkov: https://github.com/bridgecrewio/checkov
+
+### Example vulnerability
+- Allow external traffic to the server like allow all ports.
+- Ensure all data stored in the S3 bucket is securely encrypted at rest
+- Ensure the S3 bucket has access logging enabled
+
+##Scan AMI’s or containers for OS vulnerabilities
+- Anchore, Ansible, Qualys, Newrelic
+
+### Example vulnerability
+- Root access login
+- Password authenticate enabled
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+- AWS Security Hub
+
+### Example vulnerability
+- EC2 instances should be managed by AWS Systems Manager
+- EC2 instances should use Instance Metadata Service Version 2 (IMDSv2)
+- Security groups do not restrict ports or allow access from all IP's

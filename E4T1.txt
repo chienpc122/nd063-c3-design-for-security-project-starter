@@ -1,0 +1,10 @@
+
+
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+- Disable password login from OpenSSH, also disable port 22, restrict network traffic that is not the application port
+- Allow SSH only via AWS Console using Session Manager with specific roles
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+- Enable server-side encryption on S3 buckets.
+- Provide least privileges to access to the specific bucket instead of allow access to all buckets.
+- Advanced we should provide specific roles that can access to the specific bucket.
