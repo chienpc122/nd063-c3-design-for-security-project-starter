@@ -1,0 +1,3 @@
+even the insight and findings found some resolved records, the Security Hub still not updating the Security Score.
+I've attached two more images: E4T3_securityhub_resolved.png and E4T3_securityhub_reduce.png you can see the graph or table for more information.
+Please inform me if it is needed further action to make the score card work. Thanks
